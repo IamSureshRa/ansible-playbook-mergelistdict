@@ -1,0 +1,15 @@
+list:
+  - name: apple
+    product: macbook
+    os: MacOS
+  - name: Microsoft
+    product: surface
+    os: Windows 11
+
+list1:
+  - name: apple
+    product: macbook
+    os: MacOS
+  - name: Microsoft
+    product: surface
+    os: Windows 11

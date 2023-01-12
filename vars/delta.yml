@@ -1,0 +1,9 @@
+list:
+  - name: google
+    product: chromebook
+    os: chromeos
+
+list2:
+  - name: google
+    product: chromebook
+    os: chromeos
