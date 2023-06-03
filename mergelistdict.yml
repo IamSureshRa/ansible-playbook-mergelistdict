@@ -10,8 +10,10 @@
 
   tasks:
     - name: Print Values
-      debug:
+      ansible.builtin.debug:
         msg: bla bla bla {{ list }}
 
-    - set_fact:
+    - name: Set_fact merged vars
+      ansible.builtin.set_fact:
         data: "{{ [list1, list2, list3] | community.general.lists_mergeby('name', recursive=true, list_merge='append') }}"
+        
