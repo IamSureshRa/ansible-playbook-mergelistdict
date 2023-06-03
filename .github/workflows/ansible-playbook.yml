@@ -20,7 +20,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
-  greet:
+  run_playbook:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -29,3 +29,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Ansible Version
       run: ansible --version
+
+    - name: Playbook ${{ github.event.inputs.name }}"
+      run: ansible-playbook ${{ github.event.inputs.name }}"
