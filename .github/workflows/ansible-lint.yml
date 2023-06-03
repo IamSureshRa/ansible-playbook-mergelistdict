@@ -4,8 +4,8 @@ name: Ansible Lint
 on: [push]
 
 jobs:
-  build:
-    name: Ansible Lint # Naming the build is important to use it as a status check
+  ansible-lint:
+    name: runner / ansible-lint
     runs-on: ubuntu-latest
 
     steps:
