@@ -22,5 +22,5 @@ jobs:
         uses: reviewdog/action-yamllint@v1
         with:
           github_token: ${{ secrets.github_token }}
-          reporter: github-pr-check    # Change reporter.
+          reporter: github-pr-review    # Change reporter.
           # yamllint_flags: 'src/'
