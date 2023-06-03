@@ -1,7 +1,7 @@
 ---
 
   name: Ansible Lint By reviewdog
-  on: [push, pull_request]
+  on: [pull_request]
   jobs:
     ansible-lint:
       name: runner / ansible-lint 
@@ -18,3 +18,9 @@
             reporter: github-pr-review # Change reporter.
             # ansiblelint_flags: '-x core .'
             ansiblelint_version: 6.17.0
+        - name: yamllint
+          uses: reviewdog/action-yamllint@v1
+          with:
+            github_token: ${{ secrets.github_token }}
+            reporter: github-pr-review # Change reporter.
+            yamllint_flags: 'src/'
