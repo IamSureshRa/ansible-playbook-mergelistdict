@@ -3,7 +3,7 @@
 name: GitHub Actions Lint By reviewdog
 on: [pull_request]
 jobs:
-  actionlint:
+  reviewdog-actionlint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
