@@ -16,4 +16,4 @@
           with:
             github_token: ${{ secrets.github_token }}
             reporter: github-pr-review # Change reporter.
-            ansiblelint_flags: '-x core *'
+            ansiblelint_flags: '-x core'
