@@ -19,4 +19,4 @@
 
     - name: Print Values
       ansible.builtin.debug:
-        msg: {{ data }}
+        msg: "{{ data }}"
