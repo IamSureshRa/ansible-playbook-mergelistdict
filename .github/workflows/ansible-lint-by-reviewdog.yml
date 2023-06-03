@@ -1,7 +1,7 @@
 ---
 
   name: Ansible Lint By reviewdog
-  on: [pull_request]
+  on: [push, pull_request]
   jobs:
     ansible-lint:
       name: runner / ansible-lint 
