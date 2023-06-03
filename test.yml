@@ -13,9 +13,6 @@
       debug:
         msg: bla bla bla {{ list }}
 
-    - set_fact:
-        data: "{{ [list1, list2, list3]|
-           community.general.lists_mergeby('name',
-                                           recursive=true,
-                                           list_merge='append') }}" 
-                                           
+    - name: Print Values
+      set_fact:
+        data: "{{ [list1, list2, list3] | community.general.lists_mergeby('name', recursive=true, list_merge='append') }}"
