@@ -1,12 +1,10 @@
-# This is a basic workflow that is manually triggered
+---
 
 name: Ansible Playbook Workflow
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
+
     inputs:
       name:
         default: 'site.yml'
@@ -17,16 +15,13 @@ on:
         required: true
         type: choice
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
+
   run_playbook:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
+
     - name: Ansible Version
       run: ansible --version
 
