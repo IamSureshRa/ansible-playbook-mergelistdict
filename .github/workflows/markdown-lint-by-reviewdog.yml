@@ -3,7 +3,7 @@
 name: Markdown Lint By reviewdog
 on: [pull_request]
 jobs:
-  markdown-lint:
+  reviewdog-markdown-lint:
     name: runner / remark-lint / markdown lint
     runs-on: ubuntu-latest
     steps:
@@ -11,12 +11,12 @@ jobs:
       - name: install remark presets
         run: npm install remark-preset-lint-recommended
         shell: bash
-      - name: remark-lint
+      - name: remark-lint-reviewdog
         uses: reviewdog/action-remark-lint@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check
-      - name: markdownlint
+      - name: markdownlint-reviewdog
         uses: reviewdog/action-markdownlint@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

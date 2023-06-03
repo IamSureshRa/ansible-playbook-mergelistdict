@@ -4,8 +4,8 @@ name: Ansible Lint
 on: [push]
 
 jobs:
-  ansible-lint:
-    name: runner / ansible-lint
+  ansible-ansible-lint:
+    name: ansible / ansible-lint
     runs-on: ubuntu-latest
 
     steps:
