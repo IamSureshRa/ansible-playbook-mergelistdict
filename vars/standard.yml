@@ -2,7 +2,7 @@ list:
   - name: apple
     product: macbook
     os: MacOS
-    
+
 list3:
   - name: google
     product: chromebook
