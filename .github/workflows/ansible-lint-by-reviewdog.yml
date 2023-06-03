@@ -4,7 +4,7 @@ name: Ansible Lint By reviewdog
 on: [pull_request]
 jobs:
   ansible-lint:
-    name: runner / ansible-lint
+    name: runner / ansible-lint / yaml-lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
