@@ -44,7 +44,7 @@ jobs:
         # inventory: |
         #   [all]
         #   example.com
-    
+
         #   [group1]
         #   example.com
         # Optional, SSH known hosts file content
