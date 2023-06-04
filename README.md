@@ -1,6 +1,5 @@
 # Ansible
 
-
 ### GitHub Actions
 
 #### General
