@@ -6,13 +6,13 @@ roles:
   - name: geerlingguy.java
     version: 1.9.6
 
+  # https://galaxy.ansible.com/docs/using/installing.html
+  - src: https://github.com/bennojoy/nginx
+    version: master
+    name: nginx_role
+
 collections:
   # Install a collection from Ansible Galaxy.
   - name: geerlingguy.php_roles
     version: 0.9.3
     source: https://galaxy.ansible.com
-
-# # https://galaxy.ansible.com/docs/using/installing.html
-# - src: https://github.com/bennojoy/nginx
-#   version: master
-#   name: nginx_role
